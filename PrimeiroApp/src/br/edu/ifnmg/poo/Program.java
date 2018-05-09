@@ -7,7 +7,9 @@ package br.edu.ifnmg.poo;
 public class Program {
     public static void main(String[] args) {
         Pessoa p1 = new Pessoa();
+        Pessoa p2 = new Pessoa(0, "Nome");
         PessoaFisica pf1 = new PessoaFisica();
+        PessoaFisica pf2 = new PessoaFisica(1, "Nome", 1234567890123L);
         Empregado e1 = new Empregado();
         e1.matricula = 123456789;
         System.out.println(e1.matricula);
@@ -16,7 +18,12 @@ public class Program {
         pf1.cpf = 45454646;
         System.out.println(pf1.getNome());
         System.out.println(pf1.getCpf());
+        System.out.println(p1);
+        System.out.println(p2);
+        System.out.println(pf1);
+        System.out.println(pf2);
         
+        /*
         Cao c1 = new Cao();
         Cao c2 = new Cao();
         Cao c3 = new Cao();
@@ -56,5 +63,6 @@ public class Program {
         System.out.println(c3.getPeso());
         System.out.println(c3.getIdade());
         System.out.println(c3.getLatido());
+        */
     }
 }
